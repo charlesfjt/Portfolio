@@ -1,0 +1,245 @@
+*{
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #22355ae5;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1,h2,h3,a,p{
+  color: #fbe8d3;
+}
+
+h1{
+  font-family: 'Sacramento', cursive;
+  font-size: 4rem;
+  margin-top: 1rem;
+  line-height: 2;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+font-size: 2rem;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+}
+header{
+  height: auto;
+  margin: 0rem auto;
+}
+.nav-container{
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+.nav-link-wrapper{
+  margin: auto 2rem;
+  border-bottom: 1.5px solid transparent;
+  text-transform: uppercase;
+  transition: border-bottom 0.8s;
+}
+.nav-link-wrapper a{
+  align-items: center;
+  color: #f85f73;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.8s;
+  font-weight: 600;
+}
+.nav-link-wrapper:hover{
+border-bottom: 1.5px solid #f85f73;
+}
+.nav-link-wrapper a:hover{
+  color: #f85f73; 
+}
+.current-page{
+  border-bottom: 1.5px solid #f85f73;
+}
+.current-page a {
+  color: #f85f73 !important;
+  font-weight: bold;
+}
+.top-container p{
+  font-size: 2rem;
+  font-weight: normal;  
+}
+.top-container{
+  padding: 1em;
+  margin-bottom: 2em;
+}
+.mountain{
+  max-width: 50%;
+  width: 500px;
+}
+.skills h2{
+  margin-bottom: 1em;
+  color: #f85f73;
+}
+.skill-row,.hobbies-row{
+  display: flex;
+  width: 70%;
+  margin: 2em auto;
+  justify-content: center;
+}
+.skill-row-img, .hobbies-row-img{
+  flex: 1 1 20%;
+  text-align: right;
+  margin: auto 2em auto;
+}
+.skill-row img, .hobbies-row img{
+  width: 5em;
+}
+.skill-row-txt, .hobbies-row-txt{
+  flex:1 1 60%;
+  text-align: left;
+  justify-content: center;
+  margin: auto;;
+}
+.middle-container {
+  font-size: 1rem;
+}
+.cloud{
+  opacity: 50%;
+  position: absolute;
+  width: 10%;
+  z-index: -1;
+}  
+.top-cloud{  
+  top: 100px;
+  right: 300px;  
+}
+
+
+hr{
+  border: dotted #fa7f72 6px;
+  border-bottom: none;
+  width: 15%;
+  margin: 50px auto;
+}
+
+/* Contact styles */
+.contact-me h2{
+  color: #f85f73;
+  margin-bottom: .5em;
+}
+.contact-me h3{
+  background: linear-gradient(to right,#f85f73,#fbe8d3);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color:transparent;
+  margin-bottom: .5em;
+}
+.form-wrapper{
+  margin-top: 1em;
+}
+.form-wrapper h2, h3, p{
+  line-height: 2;
+}
+.contact-me p{
+  font-size: .75em;
+}
+.form-wrapper label {
+  display: flex;
+  color: #fbe8d3;
+  font-size: .75em;
+  justify-content: center;
+  margin: 1em 0 .5em;
+}
+.form-wrapper input{
+  width: 18em;
+}
+
+button{
+  background-color: #3c3641;
+  border-radius: 10px;
+  color: #fbe8d3;
+  margin: 1em 0;
+  padding: .5em 2.5em;
+  transition: background-color 0.5s;
+}
+button:hover{
+  background-color: #928a97;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+  /*** PROJECTS STYLES ****/
+  .projects-container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;;
+    width: 90%;
+ }
+  .projects-wrapper{
+    width: 45%;
+    margin-top: 3em;
+  }
+  .img-text h2{
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #283c63;
+  }
+
+ 
+
+  /* Footer styles */
+  .bottom-container{
+    display: flex;
+    background-color:#928a97;
+    height: 6vh;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .bottom-container p{
+    font-size: .75rem;
+    color: #fbe8d3;
+  }
+  .social-media-links{
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: center;
+  }
+  .copyright{
+    flex: 1 1 50%;
+  }
+  .footer-link{
+    border-bottom: 2px solid transparent;
+    font-size: .75rem;    
+    margin: 0 2em;
+    transition: border-bottom 0.5s ease-in-out;    
+  }
+  .footer-link a{
+    color: #fbe8d3;
+    text-decoration: none;
+    transition: font-weight 0.5s
+  }
+  .footer-link:hover{
+    border-bottom: 2px solid #fbe8d3;
+  }
+
+  .footer-link a:hover{
+    font-weight: bold;
+  }
+
+  /* Media queries*/
+  @media (max-width:375px){
+    body{
+      font-size: 75%;
+    }
+.nav-container{
+  
+}
+  }
